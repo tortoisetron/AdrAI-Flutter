@@ -12,7 +12,7 @@ PROMPT;
     try {
         $client = new \GuzzleHttp\Client([
             'timeout' => 90,
-            'http_errors' => false // Prevent Guzzle from throwing exceptions on 4xx/5xx
+            'http_errors' => false // Prevent Guzzle from throwing exceptions 
         ]);
         
         $response = $client->post('https://telecom-polls-herself-name.trycloudflare.com/api/generate', [
